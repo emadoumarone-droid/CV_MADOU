@@ -1,0 +1,112 @@
+
+.cv-container {
+    width: 90%;    
+    margin: auto;   
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* petite ombre élégante */
+}
+.en_haut{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #34495E;
+    border-bottom: 3px solid #ddd;
+}
+body{
+    font-family: 'Segoe UI', arial, sans-serif;
+    line-height: 1.6;
+}
+.photo img {
+    width: 180px;
+    height: 180px;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-left: 50px;
+    object-fit: cover;
+}
+.nom {
+    text-align: right;
+    margin-right: 30px;
+}
+.nom h2 {
+    margin: 0;
+    font-size: 28px;
+    color: aliceblue;
+}
+.nom p {
+    margin-top: 5px;
+    font-weight: normal;
+    color: #555;
+    border-top: 3px solid aliceblue ;
+    margin-top: 3px;
+    padding-top: 3px;
+    width: 60px;
+    color: aliceblue;
+    /* text-align: right; */
+}
+.contenu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;/*ne passe pas a la ligne*/
+}
+.part_gauche{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    /* background-color: beige; */
+    background-color: #EDEDED;
+    border-right: 2px solid #ddd;
+}
+.part_droite{
+    flex: 1;
+    padding: 28px 36px;
+}
+h2, h3 {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    color: #34495E;
+    border-bottom: 2px solid #34495E;
+}
+
+.temps{
+    display: flex;
+    margin-top: 20px;
+}
+.date_duree{
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.date{
+    font-weight: bold;
+}
+.duree{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.desc{
+    flex: 1;
+    padding-left: 20px;
+    line-height: 1.4;
+    font-size: 16px;
+}
+.education ul, li{
+    padding: 5px;
+    margin-left: 20px;
+}
+@media(max-width:786px){
+    .en_haut{
+        flex-direction: column;
+        text-align: center;
+    }
+    .contenu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenu aside{
+        width: 90%;;
+    }
+}
