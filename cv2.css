@@ -1,6 +1,6 @@
 
 .cv-container {
-    width: 68%;    
+    width: 70%;    
     margin: auto;   
     background: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /* petite ombre élégante */
@@ -43,19 +43,18 @@ body{
     padding-top: 3px;
     width: 60px;
     color: aliceblue;
-    /* text-align: right; */
+    
 }
 .contenu{
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;/*ne passe pas a la ligne*/
+    flex-wrap: nowrap;
 }
 .part_gauche{
     width: 300px;
     display: flex;
     flex-direction: column;
     padding: 28px;
-    /* background-color: beige; */
     background-color: #EDEDED;
     border-right: 2px solid #ddd;
 }
@@ -112,7 +111,6 @@ h2, h3 {
 }
 
 
-/* 🔘 Bouton de changement de thème (placé en bas) */
 #btnTheme {
   position: fixed;
   bottom: 20px;
@@ -133,8 +131,6 @@ h2, h3 {
   background-color: #34495E;
   color: #fff;
 }
-
-/* 🌞 Thème clair (par défaut) */
 .en_haut {
   background-color: #34495E;
   color: white;
@@ -143,20 +139,20 @@ h2, h3 {
   color: white;
 }
 
-/* 🌑 Thème sombre */
+
 .sombre {
   background-color: #1c1c1c;
   color: #eaeaea;
 }
 
 .sombre .en_haut {
-  background-color: #f0db4f; /* fond jaune clair dans le mode sombre */
-  color: #000; /* texte noir dans le bandeau du haut */
+  background-color: #f0db4f; 
+  color: #000; 
 }
 
 .sombre .nom h2, 
 .sombre .nom p {
-  color: #000; /* texte noir pour bien contraster */
+  color: #000; 
 }
 
 .sombre .part_gauche {
@@ -183,7 +179,6 @@ h2, h3 {
   color: #1c1c1c;
 }
 
-/* ✅ Partie droite reste claire avec texte noir en mode sombre */
 .sombre .part_droite {
   background-color: #f5f5f5;
   color: #000000;

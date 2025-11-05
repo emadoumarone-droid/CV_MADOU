@@ -107,7 +107,7 @@
                     <div class="desc">
                         <strong>Yamaries Business</strong> : Droshiping, Infographie, comment Acheter sur Alibaba...
                     </div>
-            </div>
+                </div>
             <div class="section">
                 <h2>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
@@ -141,19 +141,20 @@
      </main>
 </div>
 
-<button id="btnTheme" onclick="changerTheme()"> Mode Sombre</button>
-
-<script>
-function changerTheme() {
-  document.body.classList.toggle('sombre');
-  const bouton = document.getElementById('btnTheme');
-  if (document.body.classList.contains('sombre')) {
-    bouton.textContent = "Mode Clair";
-  } else {
-    bouton.textContent = "Mode Sombre";
-  }
-}
-</script>
+    <button id="btnTheme" onclick="changerTheme()"> Mode Sombre</button>
+    <script>
+    function changerTheme()
+    {
+        document.body.classList.toggle('sombre'); /*ajoute la class sombre si ilest al*/
+        const bouton = document.getElementById('btnTheme'); /*recup grace a id*/
+        if (document.body.classList.contains('sombre'))
+        {
+            bouton.textContent = "Mode Clair";
+        } else {
+            bouton.textContent = "Mode Sombre";
+        }
+    }
+    </script>
 
    
 </body>
